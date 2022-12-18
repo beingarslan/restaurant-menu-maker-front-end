@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style sheet link bootstrap -->
+    <link rel="stylesheet" href="stylesheet/bootstrap.css">
+    <!-- coustom stylesheet -->
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <!-- bootstrap online link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- google font links  -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+        rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+        rel="stylesheet" type="text/css">
+    <!-- cdn link start noe -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+        rel="stylesheet">
+
+    <title>home page</title>
+    <style>
+        @media (min-width: 800px) and (max-width: 989px) {
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                grid-gap: 19px;
+                grid-auto-rows: minmax(70px, auto);
+
+            }
+
+            .box:first-child {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+
+        }
+
+        @media (max-width: 1090px) {
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-gap: 20px;
+                grid-auto-rows: minmax(100px, auto);
+
+            }
+
+            .box:first-child {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+
+
+        }
+
+        @media (min-width: 1089px) {
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                grid-gap: 20px;
+                grid-auto-rows: minmax(100px, auto);
+
+            }
+
+            .box:first-child {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+
+
+
+        }
+
+        @media (max-width: 860px) {
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-gap: 20px;
+                grid-auto-rows: minmax(100px, auto);
+
+            }
+
+            .box:first-child {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+
+
+        }
+
+        @media (max-width: 600px) {
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-gap: 15px;
+                grid-auto-rows: minmax(100px, auto);
+
+            }
+
+            .box:first-child {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+
+
+        }
+
+        @media (max-width: 599px) {
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 20px;
+                grid-auto-rows: minmax(100px, auto);
+
+            }
+
+            .box:first-child {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+
+        }
+
+        @media (max-width: 460px) {
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 10px;
+                grid-auto-rows: minmax(auto, auto);
+
+            }
+
+            .box:first-child {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+
+
+
+        }
+
+
+        @media (max-width: 340px) {
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 5px;
+                grid-auto-rows: auto;
+
+            }
+
+            .box:first-child {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+        }
+
+        @media (max-width: 990px) {
+            .box-small-card {
+                display: none;
+            }
+        }
+
+
+        .box {
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+            background-color: white;
+            /* padding-bottom: px ; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-image" style=" background-image:url('images/orawhite.jpeg') ;">
+
+        <div class="m-auto w-lg-75 w-md-75">
+            <nav class="navbar m-0 my-2 m-auto">
+                <div class="container-fluid my-3">
+                    <a href="Hone-page.html" class="text-decoration-none text-dark">
+                        <button class="border-0 fw-bolder py-2 px-2" style="background-color:#ffbd09 ;"><span
+                                class="bg-dark fw-bolder  py-25 px-2 fs-4 m-auto"
+                                style="color: #ffbd09;">Y</span></button>
+                    </a>
+                    <button class="navbar-toggler border-0 pb-3 text-dark fs-4 ms-auto" data-bs-toggle="offcanvas"
+                        data-bs-target="#off" aria-controls="off">
+
+                        <i class="fa-sharp fa-solid fa-language fs-3 mt-1"> </i> English
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="w-lg-75 w-md-75 m-auto  pb-5">
+            <!-- stated here small card menu -->
+            <div class="row py-5 mx-1">
+
+                <div class="col-xxl-9 col-xl-9  col-lg-9 col-md-12 col-sm-12 col-12">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6 col-6">
+                            <div class="text-dark fs-2">
+                                <b>Hey,</b>
+                                <p class="fs-4">what's up?</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-6 d-lg-none pe-4 ms-auto text-end ">
+                            <!-- <button class="btn btn-light fw-bold"><i class="fa-solid fa-filter"></i> Filter</button> -->
+                            <!-- Button trigger modal -->
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                class="btn btn-light fw-bold ms-auto"><i class="fa-solid fa-filter"></i> Filter
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content m-auto" style="width: 340px;">
+
+                                        <div class="modal-body">
+                                            <div class="rounded-4 p-3 py-3">
+                                                <!-- left side text(Filter) and right side icon(close) started  -->
+                                                <div class="d-flex fs-5">
+                                                    <div class="col-12 ms-0">
+                                                        <a href="#" class="text-decoration-none text-dark ">
+                                                            <p class="text-start fw-bolder"><i
+                                                                    class="fa-solid fa-filter"></i>
+                                                                Filter</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col me-auto text-end">
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+
+                                                    </div>
+                                                </div>
+                                                <!-- left side text(Filter) and right side icon(close) ended  -->
+                                                <!-- started hr line  -->
+                                                <div class="d-flex">
+                                                    <div class="col ms-0">
+                                                        <hr class="mt-0 border-3 border-dark pt-0">
+                                                    </div>
+                                                </div>
+                                                <!-- ended hr line  -->
+                                                <!-- started price range  -->
+                                                <div class="row text-start">
+                                                    <!-- card first section started  -->
+                                                    <div class="m-auto">
+                                                        <a href="#" class="text-decoration-none text-dark">
+                                                            <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                                                style="border: 1px solid #ffbd09;">
+                                                                <div class="d-flex text-center">
+                                                                    <img src="images/white-back.jpeg" width="25"
+                                                                        height="25" class="p-0 m-0" alt=" ">
+                                                                    <span class="m-auto me-1 text-fluid"
+                                                                        style="font-size: 9px;">vegan</span>
+                                                                </div>
+
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="text-decoration-none text-dark">
+                                                            <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                                                style="border: 1px solid #ffbd09;">
+                                                                <div class="d-flex text-center">
+                                                                    <img src="images/white-back.jpeg" width="25"
+                                                                        height="25" class="m-0 p-0" alt=" ">
+                                                                    <span class="m-auto me-1 text-fluid"
+                                                                        style="font-size: 9px;">Halal</span>
+                                                                </div>
+
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="text-decoration-none text-dark">
+
+                                                            <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                                                style="border: 1px solid #ffbd09;">
+                                                                <div class="d-flex text-center">
+                                                                    <img src="images/white-back.jpeg" width="25"
+                                                                        height="25" class="p-0 m-0" alt=" ">
+                                                                    <span class="m-auto me-1 text-fluid"
+                                                                        style="font-size: 9px;">Spicy</span>
+                                                                </div>
+
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="text-decoration-none text-dark">
+                                                            <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                                                style="border: 1px solid #ffbd09;">
+                                                                <div class="d-flex text-center">
+                                                                    <img src="images/white-back.jpeg" width="25"
+                                                                        height="25" class="p-0 m-0" alt=" ">
+                                                                    <span class="m-auto me-1 text-fluid"
+                                                                        style="font-size: 9px;">chicken</span>
+                                                                </div>
+
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="text-decoration-none text-dark">
+                                                            <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                                                style="border: 1px solid #ffbd09;">
+                                                                <div class="d-flex text-center">
+                                                                    <img src="images/white-back.jpeg" width="25"
+                                                                        height="25" class="p-0 m-0" alt=" ">
+                                                                    <span class="m-auto me-1 text-fluid"
+                                                                        style="font-size: 9px;">Meat</span>
+                                                                </div>
+
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="text-decoration-none text-dark">
+                                                            <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                                                style="border: 1px solid #ffbd09;">
+                                                                <div class="d-flex text-center">
+                                                                    <img src="images/white-back.jpeg" width="25"
+                                                                        height="25" class="p-0 m-0" alt=" ">
+                                                                    <span class="m-auto me-1 text-fluid"
+                                                                        style="font-size: 9px;">Fish</span>
+                                                                </div>
+
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="text-decoration-none text-dark">
+                                                    </div>
+                                                    <!-- card first section ended -->
+                                                    <!-- Allergy section started -->
+                                                    <div class="col ms-0 mt-2 mb-0 fs-5">
+                                                        <p class="fw-bolder m-0 p-0"><i class="fa-solid fa-filter"></i>
+                                                            Allergy</p>
+                                                        <hr class="mt-1 border-3 border-dark pt-0">
+                                                    </div>
+                                                    <!--Allergy section ended -->
+                                                    <div class="m-auto">
+                                                        <a href="#" class="text-decoration-none text-dark">
+                                                            <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                                                style="border: 1px solid #ffbd09;">
+                                                                <div class="d-flex text-center">
+                                                                    <img src="images/white-back.jpeg" width="25"
+                                                                        height="25" class="p-0 m-0 rounded-5 me-1"
+                                                                        alt=" ">
+                                                                    <span class="m-auto me-1 text-fluid"
+                                                                        style="font-size: 9px;">Gluten</span>
+                                                                </div>
+
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="text-decoration-none text-dark">
+                                                            <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                                                style="border: 1px solid #ffbd09;">
+                                                                <div class="d-flex text-center">
+                                                                    <img src="images/white-back.jpeg" width="25"
+                                                                        height="25" class="m-0 p-0" alt=" ">
+                                                                    <span class="m-auto me-1 text-fluid"
+                                                                        style="font-size: 9px;">Fish</span>
+                                                                </div>
+
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="text-decoration-none text-dark">
+
+                                                            <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                                                style="border: 1px solid #ffbd09;">
+                                                                <div class="d-flex text-center">
+                                                                    <img src="images/white-back.jpeg" width="25"
+                                                                        height="25" class="p-0 m-0 rounded-5 me-1"
+                                                                        alt=" ">
+                                                                    <span class="m-auto me-1 text-fluid"
+                                                                        style="font-size: 9px;">Nuts</span>
+                                                                </div>
+
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="text-decoration-none text-dark">
+                                                            <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                                                style="border: 1px solid #ffbd09;">
+                                                                <div class="d-flex text-center">
+                                                                    <img src="images/white-back.jpeg" width="25"
+                                                                        height="25" class="p-0 m-0 rounded-5 me-1"
+                                                                        alt=" ">
+                                                                    <span class="m-auto me-1 text-fluid"
+                                                                        style="font-size: 9px;">Shellfish</span>
+                                                                </div>
+
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="text-decoration-none text-dark">
+                                                            <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                                                style="border: 1px solid #ffbd09;">
+                                                                <div class="d-flex text-center">
+                                                                    <img src="images/white-back.jpeg" width="25"
+                                                                        height="25" class="p-0 m-0 rounded-5 me-1"
+                                                                        alt=" ">
+                                                                    <span class="m-auto me-1 text-fluid"
+                                                                        style="font-size: 9px;">Sesame
+                                                                        Seed</span>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                                                style="border: 1px solid #ffbd09;">
+                                                                <div class="d-flex text-center">
+                                                                    <img src="images/pizza-big-card.jpeg" width="25"
+                                                                        height="25" class="p-0 m-0 rounded-5 me-1"
+                                                                        alt=" ">
+                                                                    <span class="m-auto me-1 text-fluid"
+                                                                        style="font-size: 9px;">Milk</span>
+                                                                </div>
+
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="text-decoration-none text-dark">
+                                                            <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                                                style="border: 1px solid #ffbd09;">
+                                                                <div class="d-flex text-center">
+                                                                    <img src="images/white-back.jpeg" width="25"
+                                                                        height="25" class="p-0 m-0 rounded-5 me-1"
+                                                                        alt=" ">
+                                                                    <span class="m-auto me-1 text-fluid"
+                                                                        style="font-size: 9px;">Peanut</span>
+                                                                </div>
+
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="text-decoration-none text-dark">
+                                                            <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                                                style="border: 1px solid #ffbd09;">
+                                                                <div class="d-flex text-center">
+                                                                    <img src="images/white-back.jpeg" width="25"
+                                                                        height="25" class="p-0 m-0 rounded-5" alt=" ">
+                                                                    <span class="m-auto me-1 text-fluid"
+                                                                        style="font-size: 9px;">celery</span>
+                                                                </div>
+
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="text-decoration-none text-dark">
+                                                            <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                                                style="border: 1px solid #ffbd09;">
+                                                                <div class="d-flex text-center">
+                                                                    <img src="images/white-back.jpeg" width="25"
+                                                                        height="25" class="p-0 m-0 rounded-5 " alt=" ">
+                                                                    <span class="m-auto me-1 text-fluid"
+                                                                        style="font-size: 9px;">Lupine</span>
+                                                                </div>
+
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="text-decoration-none text-dark">
+                                                            <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                                                style="border: 1px solid #ffbd09;">
+                                                                <div class="d-flex text-center">
+                                                                    <img src="images/white-back.jpeg" width="25"
+                                                                        height="25" class="p-0 m-0 rounded-5 " alt=" ">
+                                                                    <span class="m-auto me-1 text-fluid"
+                                                                        style="font-size: 9px;">Soy
+                                                                        Beans</span>
+                                                                </div>
+
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="text-decoration-none text-dark">
+                                                            <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                                                style="border: 1px solid #ffbd09;">
+                                                                <div class="d-flex text-center">
+                                                                    <img src="images/orawhite.jpeg" width="25"
+                                                                        height="25" class="p-0 m-0 rounded-5 " alt=" ">
+                                                                    <span class="m-auto me-1 text-fluid"
+                                                                        style="font-size: 9px;">Eggs</span>
+                                                                </div>
+
+                                                            </div>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- nav bar roe in two col one col lg none and other col md shadow-lg -->
+                        <!-- justify-content-between col-form-label card-group -->
+                    </div>
+                    <div class="grid">
+                        <div class="box card rounded-4" style="height: 100px; width: 220px;">
+                            <a href="special-ofr-pagr.html" class="text-decoration-none text-dark ">
+
+                                <div class="d-inline-flex mt-4 py-1">
+                                    <div class="text-center mx-2">
+                                        <img src="images/spicealdeal.jpeg" class="rounded-4 pt-0 m-0" width="40"
+                                            height="40" alt=" ">
+                                        <div class="p-0 pt-0 m-0">
+                                            <span class="p-0 small px-md-3 m-0">Special Offer</span>
+                                        </div>
+                                    </div>
+                                    <div class="pb-3 ms-auto m-auto text-center">
+                                        <a href="special-ofr-pagr.html"
+                                            class="text-decoration-none bg-danger text-light rounded-5 px-3">view</a>
+                                    </div>
+                                </div>
+
+
+                            </a>
+                        </div>
+                        <div class="box border rounded-4" style="height: 100px;">
+                            <a href="starter.html" class="ms-1 text-decoration-none text-dark">
+                                <div class="border-0">
+                                    <div class="text-center">
+                                        <img src="images/starterfood.jpeg" class="rounded-4 p-0 m-0" width="40"
+                                            height="40" alt=" ">
+                                        <div class="py-1">
+                                            <span class="p-0 text-dark pb-2 small m-0">Starter</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="box border rounded-4" style="height: 100px;">
+                            <a href="starter.html" class="ms-1 text-decoration-none text-dark">
+                                <div class="border-0">
+                                    <div class="text-center">
+                                        <img src="images/spicealdeal.jpeg" class="rounded-4 p-0 m-0" width="40"
+                                            height="40" alt=" ">
+                                        <div class="py-1">
+                                            <span class="p-0 text-dark small m-0">Salad</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="box border rounded-4" style="height: 100px;">
+                            <a href="starter.html" class="ms-1 text-decoration-none text-dark">
+                                <div class="border-0">
+                                    <div class="text-center">
+                                        <img src="images/pizza-big-card.jpeg" class="rounded-4 p-0 m-0" width="40"
+                                            height="40" alt=" ">
+                                        <div class="py-1">
+                                            <span class="p-0 text-dark small m-0">Snack</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="box border rounded-4" style="height: 100px;">
+                            <a href="starter.html" class="ms-1 text-decoration-none text-dark">
+                                <div class="border-0">
+                                    <div class="text-center">
+                                        <img src="images/hotchpotch.jpeg" class="rounded-4 p-0 m-0" width="40"
+                                            height="40" alt=" ">
+                                        <div class="py-1">
+                                            <span class="p-0 text-dark small m-0">Hotchpotch</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="box border rounded-4" style="height: 100px;">
+                            <a href="starter.html" class="ms-1 text-decoration-none text-dark">
+                                <div class="border-0">
+                                    <div class="text-center">
+                                        <img src="images/orawhite.jpeg" class="rounded-4 p-0 m-0" width="40" height="40"
+                                            alt=" ">
+                                        <div class="py-1">
+                                            <span class="p-0 text-dark small m-0">Pasta</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="box border rounded-4" style="height: 100px;">
+                            <a href="starter.html" class="ms-1 text-decoration-none text-dark">
+                                <div class="border-0">
+                                    <div class="text-center">
+                                        <img src="images/Burder-deal.jpeg" class="rounded-4 p-0 m-0" width="40"
+                                            height="40" alt=" ">
+                                        <div class="py-1">
+                                            <span class="p-0 text-dark small m-0">Meat Dish</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="box border rounded-4" style="height: 100px;">
+                            <a href="starter.html" class="ms-1 text-decoration-none text-dark">
+                                <div class="border-0">
+                                    <div class="text-center">
+                                        <img src="images/starterfood.jpeg" class="rounded-4 p-0 m-0" width="40"
+                                            height="40" alt=" ">
+                                        <div class="py-1">
+                                            <span class="p-0 text-dark small m-0">Burgar</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="box border rounded-4" style="height: 100px;">
+                            <a href="starter.html" class="ms-1 text-decoration-none text-dark">
+                                <div class="border-0">
+                                    <div class="text-center">
+                                        <img src="images/starterfood.jpeg" class="rounded-4 p-0 m-0" width="40"
+                                            height="40" alt=" ">
+                                        <div class="py-1">
+                                            <span class="p-0 text-dark small m-0">Desserts</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xxl-3 col-xl-3 col-lg-3 ms-auto box-small-card">
+
+                    <div class="card rounded-4 p-3 py-3 shadow-lg">
+                        <!-- left side text(Filter) and right side icon(close) started  -->
+                        <div class="d-flex fs-5">
+                            <div class="col ms-0">
+                                <p class="fw-bolder"><i class="fa-solid fa-filter"></i> Filter</p>
+                            </div>
+                            <div class="col me-auto text-end">
+                                <button class="border-0 fw-bold"><i class="fa-solid fa-x"></i></button>
+                            </div>
+                        </div>
+                        <!-- left side text(Filter) and right side icon(close) ended  -->
+                        <!-- started hr line  -->
+                        <div class="d-flex">
+                            <div class="col ms-0">
+                                <hr class="mt-0 border-3 border-dark pt-0">
+                            </div>
+                        </div>
+                        <!-- ended hr line  -->
+                        <!-- started price range  -->
+                        <div class="row">
+                            <!-- card first section started  -->
+                            <div class="m-auto ">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25" class="p-0 m-0"
+                                                alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">vegan</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25" class="m-0 p-0"
+                                                alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Halal</span>
+                                        </div>
+
+                                    </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark">
+
+                                    <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25" class="p-0 m-0"
+                                                alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Spicy</span>
+                                        </div>
+
+                                    </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25" class="p-0 m-0"
+                                                alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">chicken</span>
+                                        </div>
+
+                                    </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25" class="p-0 m-0"
+                                                alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Meat</span>
+                                        </div>
+
+                                    </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25" class="p-0 m-0"
+                                                alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Fish</span>
+                                        </div>
+
+                                    </div>
+                                    <a href="#" class="text-decoration-none text-dark">
+                            </div>
+                            <!-- card first section ended -->
+                            <!-- Allergy section started -->
+                            <div class="col ms-0 mt-2 mb-0 fs-5">
+                                <p class="fw-bolder m-0 p-0"><i class="fa-solid fa-filter"></i> Allergy</p>
+                                <hr class="mt-1 border-3 border-dark pt-0">
+                            </div>
+                            <!--Allergy section ended -->
+                            <div class="m-auto">
+
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25"
+                                                class="p-0 m-0 rounded-5 me-1" alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Gluten</span>
+                                        </div>
+
+                                    </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25" class="m-0 p-0"
+                                                alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Fish</span>
+                                        </div>
+
+                                    </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark">
+
+                                    <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25"
+                                                class="p-0 m-0 rounded-5 me-1" alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Nuts</span>
+                                        </div>
+
+                                    </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25"
+                                                class="p-0 m-0 rounded-5 me-1" alt=" ">
+                                            <span class="m-auto me-1 text-fluid"
+                                                style="font-size: 9px;">Shellfish</span>
+                                        </div>
+
+                                    </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25"
+                                                class="p-0 m-0 rounded-5 me-1" alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Sesame
+                                                Seed</span>
+                                        </div>
+
+                                    </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/pizza-big-card.jpeg" width="25" height="25"
+                                                class="p-0 m-0 rounded-5 me-1" alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Milk</span>
+                                        </div>
+
+                                    </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25"
+                                                class="p-0 m-0 rounded-5 me-1" alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Peanut</span>
+                                        </div>
+
+                                    </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25"
+                                                class="p-0 m-0 rounded-5" alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">celery</span>
+                                        </div>
+
+                                    </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25"
+                                                class="p-0 m-0 rounded-5 " alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Lupine</span>
+                                        </div>
+
+                                    </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25"
+                                                class="p-0 m-0 rounded-5 " alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Soy
+                                                Beans</span>
+                                        </div>
+
+                                    </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/orawhite.jpeg" width="25" height="25"
+                                                class="p-0 m-0 rounded-5 " alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Eggs</span>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"
+        integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
