@@ -20,249 +20,58 @@
     <!-- cdn link start noe -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
         rel="stylesheet">
+<style>
+    .grid-small {
+        display: grid;
+        width: 320px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+        grid-auto-rows: auto;
+        background-color: aqua;
+        padding: 10px;
 
+    }
+    .box_1 {
+        background-color: white;
+        border: 1px solid gray;
+        /* padding: 10px; */
+        /* font-size: 20px; */
+        text-align: center;
+        height: 40px;
+        border-radius:15px ;
+    }
+    .box_1:hover {
+        background-color: #f1f1f1;
+        cursor: pointer;
+    }
+</style>
     
 </head>
 
 <body>
-   
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    fghjklbutt
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content" style="width: 350px;">
-        <!-- <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-          <button></button>
-        </div> -->
-        <div class="modal-body">
-            <div class="rounded-4 p-3 py-3">
-                <!-- left side text(Filter) and right side icon(close) started  -->
-                <div class="d-flex fs-5">
-                    <div class="col ms-0">
-                        <a href="#" class="text-decoration-none text-dark ">
-                            <p class="fw-bolder"><i class="fa-solid fa-filter"></i>
-                                Filter</p>
-                        </a>
-                    </div>
-                    <div class="col me-auto text-end">
-                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        
-                    </div>
-                </div>
-                <!-- left side text(Filter) and right side icon(close) ended  -->
-                <!-- started hr line  -->
-                <div class="d-flex">
-                    <div class="col ms-0">
-                        <hr class="mt-0 border-3 border-dark pt-0">
-                    </div>
-                </div>
-                <!-- ended hr line  -->
-                <!-- started price range  -->
-                <div class="row text-start">
-                    <!-- card first section started  -->
-                    <div class="m-auto ">
-                        <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                            style="border: 1px solid #ffbd09;">
-                            <div class="d-flex text-center">
-                                <img src="images/white-back.jpeg" width="25" height="25"
-                                    class="p-0 m-0" alt=" ">
-                                <span class="m-auto me-1 text-fluid"
-                                    style="font-size: 9px;">vegan</span>
-                            </div>
-
-                        </div>
-                        <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                            style="border: 1px solid #ffbd09;">
-                            <div class="d-flex text-center">
-                                <img src="images/white-back.jpeg" width="25" height="25"
-                                    class="m-0 p-0" alt=" ">
-                                <span class="m-auto me-1 text-fluid"
-                                    style="font-size: 9px;">Halal</span>
-                            </div>
-
-                        </div>
-
-                        <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                            style="border: 1px solid #ffbd09;">
-                            <div class="d-flex text-center">
-                                <img src="images/white-back.jpeg" width="25" height="25"
-                                    class="p-0 m-0" alt=" ">
-                                <span class="m-auto me-1 text-fluid"
-                                    style="font-size: 9px;">Spicy</span>
-                            </div>
-
-                        </div>
-                        <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                            style="border: 1px solid #ffbd09;">
-                            <div class="d-flex text-center">
-                                <img src="images/white-back.jpeg" width="25" height="25"
-                                    class="p-0 m-0" alt=" ">
-                                <span class="m-auto me-1 text-fluid"
-                                    style="font-size: 9px;">chicken</span>
-                            </div>
-
-                        </div>
-                        <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                            style="border: 1px solid #ffbd09;">
-                            <div class="d-flex text-center">
-                                <img src="images/white-back.jpeg" width="25" height="25"
-                                    class="p-0 m-0" alt=" ">
-                                <span class="m-auto me-1 text-fluid"
-                                    style="font-size: 9px;">Meat</span>
-                            </div>
-
-                        </div>
-                        <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                            style="border: 1px solid #ffbd09;">
-                            <div class="d-flex text-center">
-                                <img src="images/white-back.jpeg" width="25" height="25"
-                                    class="p-0 m-0" alt=" ">
-                                <span class="m-auto me-1 text-fluid"
-                                    style="font-size: 9px;">Fish</span>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- card first section ended -->
-                    <!-- Allergy section started -->
-                    <div class="col ms-0 mt-2 mb-0 fs-5">
-                        <p class="fw-bolder m-0 p-0"><i class="fa-solid fa-filter"></i>
-                            Allergy</p>
-                        <hr class="mt-1 border-3 border-dark pt-0">
-                    </div>
-                    <!--Allergy section ended -->
-                    <div class="m-auto">
-                        <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                            style="border: 1px solid #ffbd09;">
-                            <div class="d-flex text-center">
-                                <img src="images/white-back.jpeg" width="25" height="25"
-                                    class="p-0 m-0 rounded-5 me-1" alt=" ">
-                                <span class="m-auto me-1 text-fluid"
-                                    style="font-size: 9px;">Gluten</span>
-                            </div>
-
-                        </div>
-                        <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                            style="border: 1px solid #ffbd09;">
-                            <div class="d-flex text-center">
-                                <img src="images/white-back.jpeg" width="25" height="25"
-                                    class="m-0 p-0" alt=" ">
-                                <span class="m-auto me-1 text-fluid"
-                                    style="font-size: 9px;">Fish</span>
-                            </div>
-
-                        </div>
-
-                        <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                            style="border: 1px solid #ffbd09;">
-                            <div class="d-flex text-center">
-                                <img src="images/white-back.jpeg" width="25" height="25"
-                                    class="p-0 m-0 rounded-5 me-1" alt=" ">
-                                <span class="m-auto me-1 text-fluid"
-                                    style="font-size: 9px;">Nuts</span>
-                            </div>
-
-                        </div>
-                        <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                            style="border: 1px solid #ffbd09;">
-                            <div class="d-flex text-center">
-                                <img src="images/white-back.jpeg" width="25" height="25"
-                                    class="p-0 m-0 rounded-5 me-1" alt=" ">
-                                <span class="m-auto me-1 text-fluid"
-                                    style="font-size: 9px;">Shellfish</span>
-                            </div>
-
-                        </div>
-                        <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                            style="border: 1px solid #ffbd09;">
-                            <div class="d-flex text-center">
-                                <img src="images/white-back.jpeg" width="25" height="25"
-                                    class="p-0 m-0 rounded-5 me-1" alt=" ">
-                                <span class="m-auto me-1 text-fluid"
-                                    style="font-size: 9px;">Sesame
-                                    Seed</span>
-                            </div>
-
-                        </div>
-                        <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                            style="border: 1px solid #ffbd09;">
-                            <div class="d-flex text-center">
-                                <img src="images/pizza-big-card.jpeg" width="25"
-                                    height="25" class="p-0 m-0 rounded-5 me-1" alt=" ">
-                                <span class="m-auto me-1 text-fluid"
-                                    style="font-size: 9px;">Milk</span>
-                            </div>
-
-                        </div>
-                        <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                            style="border: 1px solid #ffbd09;">
-                            <div class="d-flex text-center">
-                                <img src="images/white-back.jpeg" width="25" height="25"
-                                    class="p-0 m-0 rounded-5 me-1" alt=" ">
-                                <span class="m-auto me-1 text-fluid"
-                                    style="font-size: 9px;">Peanut</span>
-                            </div>
-
-                        </div>
-                        <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                            style="border: 1px solid #ffbd09;">
-                            <div class="d-flex text-center">
-                                <img src="images/white-back.jpeg" width="25" height="25"
-                                    class="p-0 m-0 rounded-5" alt=" ">
-                                <span class="m-auto me-1 text-fluid"
-                                    style="font-size: 9px;">celery</span>
-                            </div>
-
-                        </div>
-                        <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                            style="border: 1px solid #ffbd09;">
-                            <div class="d-flex text-center">
-                                <img src="images/white-back.jpeg" width="25" height="25"
-                                    class="p-0 m-0 rounded-5 " alt=" ">
-                                <span class="m-auto me-1 text-fluid"
-                                    style="font-size: 9px;">Lupine</span>
-                            </div>
-
-                        </div>
-                        <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                            style="border: 1px solid #ffbd09;">
-                            <div class="d-flex text-center">
-                                <img src="images/white-back.jpeg" width="25" height="25"
-                                    class="p-0 m-0 rounded-5 " alt=" ">
-                                <span class="m-auto me-1 text-fluid"
-                                    style="font-size: 9px;">Soy
-                                    Beans</span>
-                            </div>
-
-                        </div>
-                        <div class="card mb-2 me-2 g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                            style="border: 1px solid #ffbd09;">
-                            <div class="d-flex text-center">
-                                <img src="images/orawhite.jpeg" width="25" height="25"
-                                    class="p-0 m-0 rounded-5 " alt=" ">
-                                <span class="m-auto me-1 text-fluid"
-                                    style="font-size: 9px;">Eggs</span>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
-        </div> -->
-      </div>
+    <div class="grid-small">
+       <div class="box_1">link open now 1</div>
+       <div class="box_1">link open now 2</div>
+       <div class="box_1">link open now 3</div>
+       <div class="box_1">link open now 4</div>
+       <div class="box_1">link open now 5</div>
+       <div class="box_1">link open now 6</div>
+       <div class="box_1">link open now 7</div>
+       <div class="box_1">link open now 8</div>
+       <div class="box_1">link open now 9</div>
+       <div class="box_1">link open now 10</div>
+       <div class="box_1">link open now 11</div>
+       <div class="box_1">link open now 12</div>
+       <div class="box_1">link open now 13</div>
+       <div class="box_1">link open now 14</div>
+       <div class="box_1">link open now 15</div>
+       <div class="box_1">link open now 16</div>
+       <div class="box_1">link open now 17</div>
+       <div class="box_1">link open now 18</div>
+       <div class="box_1">link open now 19</div>
     </div>
-  </div>
   
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"
   integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
