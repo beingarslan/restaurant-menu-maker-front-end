@@ -27,13 +27,17 @@
 <body>
     <div class="container-fluid bg-image" style=" background-image:url('images/orawhite.jpeg') ;">
 
-        <div class="m-auto">
-            <nav class="navbar py-0 my-2 m-auto">
-                <div class="container-fluid mx-4 my-3 m-auto">
-                    <button class="border-0 fw-bolder py-2 px-2" style="background-color:#ffbd09 ;"><span
-                            class="bg-dark fw-bolder  py-25 px-2 fs-4 m-auto" style="color: #ffbd09;">Y</span></button>
-                    <button class="navbar-toggler border-0 pb-3 text-dark fs-4" data-bs-toggle="offcanvas"
+        <div class="m-auto w-lg-75 w-md-75">
+            <nav class="navbar m-0 my-2 m-auto">
+                <div class="container-fluid my-3">
+                    <a href="Hone-page.html" class="text-decoration-none text-dark">
+                        <button class="border-0 fw-bolder py-2 px-2" style="background-color:#ffbd09 ;"><span
+                                class="bg-dark fw-bolder  py-25 px-2 fs-4 m-auto"
+                                style="color: #ffbd09;">Y</span></button>
+                    </a>
+                    <button class="navbar-toggler border-0 pb-3 text-dark fs-4 ms-auto" data-bs-toggle="offcanvas"
                         data-bs-target="#off" aria-controls="off">
+
                         <i class="fa-sharp fa-solid fa-language fs-3 mt-1"> </i> English
                     </button>
                 </div>
@@ -41,26 +45,18 @@
         </div>
 
 
-        <div class="container m-auto">
-            <!-- nav bar roe in two col one col lg none and other col md shadow-lg -->
-            <div class="row">
-                <div class="col-lg-12 col-md-6 col-6">
-                    <div class="text-dark">
-                        <a class="text-decoration-none text-dark" href="_black"><b><i class="fa-solid fa-less-than"></i>
-                                Back</b></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-6 col-lg-0 pe-4 ms-auto text-end">
-                    <button class="btn btn-light fw-bold"><i class="fa-solid fa-filter"></i> Filter</button>
-                </div>
-
-                <!-- nav bar roe in two col one col lg none and other col md shadow-lg -->
-
+        <div class="w-lg-75 w-md-75 m-auto  pb-5">
+            <div class="text-dark ms-3 fs-4">
+                <a class="text-decoration-none text-dark" href="/"><b><i class="fa-solid fa-less-than"></i>
+                        Back</b></a>
             </div>
             <!-- stated here small card menu -->
-            <div class="row pt-2">
-                <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
-                    <div class="px-3 py-2 pt-1 m-auto p-auto my-3">
+            <div class="row py-5 mx-1">
+                <div class="col-xxl-9 col-xl-9  col-lg-9 col-md-12 col-sm-12 col-12">
+                    <!-- nav bar roe in two col one col lg none and other col md shadow-lg -->
+
+
+                    <div class="text-start pb-3">
                         <div>
                             <p class="text-danger fw-bolder fs-3 m-auto">Products</p>
                         </div>
@@ -68,132 +64,313 @@
                     <!-- Deal section started here  -->
                     <div class="row">
                         <div class="col-xl-4 col-xxl-4 col-lg-4 col-sm-6 col-12 col-md-4 mb-3">
-                            <div class="card rounded-4">
-                                <div class="mt-2 mx-2">
-                                    <img src="images/Burder-deal.jpeg" class="card-img-top rounded-top-4" alt="...">
-                                </div>
-                                <div class="card-body mt-0 pt-0">
-                                    <div class="d-flex mt-2 pt-0">
-                                        <div>
-                                            <b class="card-title">Starter 05</b>
-                                        </div>
-                                        <div class="ms-auto">
-                                            <b>17-20 $</b>
-                                        </div>
+                            <a href="#" class="text-decoration-none text-dark" onclick="myFunction()">
+                                <div class="card rounded-4 pointer">
+                                    <div class="mt-2 mx-2">
+                                        <img src="images/Burder-deal.jpeg" class="card-img-top rounded-top-4" alt="...">
                                     </div>
-                                    <div class="small">
-                                        <p class="card-text pt-1 mb-0 pb-0">Some quick example text to build .</p>
-                                        <div class="m-auto pt-1">
+                                    <div class="card-body mt-0 pt-0">
+                                        <div class="d-flex mt-2 pt-0">
                                             <div>
-                                                <small>included</small>
+                                                <b class="card-title">Starter 05</b>
                                             </div>
-                                            <div class="card g-2 ms-0  rounded-4 p-2 shadow-lg small-card d-inline-block"
-                                                style="border: 1px solid #ffbd09;">
-                                                <div class="d-flex text-center">
-                                                    <img src="images/white-back.jpeg" width="25" height="25"
-                                                        class="p-0 m-0" alt=" ">
-                                                    <span class="m-auto me-1 text-fluid"
-                                                        style="font-size: 9px;">vegan</span>
-                                                </div>
-
+                                            <div class="ms-auto">
+                                                <b>17-20 $</b>
                                             </div>
-                                            <div class="card g-2 ms-0 rounded-4 p-2 shadow-lg small-card d-inline-block"
-                                                style="border: 1px solid #ffbd09;">
-                                                <div class="d-flex text-center">
-                                                    <img src="images/white-back.jpeg" width="25" height="25"
-                                                        class="p-0 m-0" alt=" ">
-                                                    <span class="m-auto me-1 text-fluid"
-                                                        style="font-size: 9px;">Halal</span>
-                                                </div>
-
-                                            </div>
-
-
                                         </div>
-                                        <div class="m-auto pt-1">
+                                        <div class="small d-none" id="cardsmed">
+                                            <p class="card-text pt-1 mb-0 pb-0">Some quick example text to build .
+                                            </p>
+                                            <!--start a grid system -->
                                             <div>
-                                                <small>Not Included</small>
+                                                <b>included</b>
                                             </div>
-                                            <div class="card g-2 ms-0 text-danger  rounded-4 p-2 shadow-lg small-card d-inline-block"
-                                                style="border: 1px solid rgb(201, 72, 72);;">
-                                                <div class="d-flex text-center">
-                                                    <img src="images/white-back.jpeg" width="25" height="25"
-                                                        class="p-0 m-0" alt=" ">
-                                                    <span class="m-auto me-1 text-fluid"
-                                                        style="font-size: 9px;">Milk</span>
+                                            <div class="grid-card">
+                                                <div class="box-card rounded-3 px-1 py-2 shadow-lg">
+                                                    <div class="d-flex justify-content-center">
+                                                        <img src="images/white-back.jpeg" width="25" height="25"
+                                                            alt=" ">
+                                                        <span class="m-auto">vegan</span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="box-card  rounded-3 px-1 py-2 shadow-lg">
+                                                    <div class="d-flex justify-content-center">
+                                                        <img src="images/white-back.jpeg" width="25" height="25"
+                                                            alt=" ">
+                                                        <span class="m-auto">Halal</span>
+                                                    </div>
+
                                                 </div>
 
+
                                             </div>
-                                            <div class="card g-2 ms-0 text-danger rounded-4 p-2 shadow-lg small-card d-inline-block"
-                                                style="border: 1px solid rgb(201, 72, 72);">
-                                                <div class="d-flex text-center">
-                                                    <img src="images/white-back.jpeg" width="25" height="25"
-                                                        class="p-0 m-0" alt=" ">
-                                                    <span class="m-auto me-1 text-fluid"
-                                                        style="font-size: 9px;">Eggs</span>
+                                            <div>
+                                                <b>Not-included</b>
+                                            </div>
+                                            <div class="grid-card">
+                                                <div class="box-card rounded-3 px-1 py-2 shadow-lg">
+                                                    <div class="d-flex justify-content-center">
+                                                        <img src="images/white-back.jpeg" width="25" height="25"
+                                                            alt=" ">
+                                                        <span class="m-auto">vegan</span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="box-card  rounded-3 px-1 py-2 shadow-lg">
+                                                    <div class="d-flex justify-content-center">
+                                                        <img src="images/white-back.jpeg" width="25" height="25"
+                                                            alt=" ">
+                                                        <span class="m-auto">Halal</span>
+                                                    </div>
+
                                                 </div>
 
+
                                             </div>
-
-
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
+
                         </div>
                         <div class="col-xl-4 col-xxl-4 col-lg-4 col-sm-6 col-12 col-md-4 mb-3">
-                            <div class="card rounded-4">
-                                <div class="mt-2 mx-2">
-                                    <img src="images/Burder-deal.jpeg" class="card-img-top rounded-top-4" alt="...">
-                                </div>
-                                <div class="card-body mt-0 pt-0">
-                                    <div class="d-flex mt-2 pt-0">
-                                        <div>
-                                            <b class="card-title">Starter 01</b>
+                            <a href="#" class="text-decoration-none text-dark" onclick="myFunction()">
+                                <div class="card rounded-4 pointer">
+                                    <div class="mt-2 mx-2">
+                                        <img src="images/Burder-deal.jpeg" class="card-img-top rounded-top-4" alt="...">
+                                    </div>
+                                    <div class="card-body mt-0 pt-0">
+                                        <div class="d-flex mt-2 pt-0">
+                                            <div>
+                                                <b class="card-title">Starter 05</b>
+                                            </div>
+                                            <div class="ms-auto">
+                                                <b>17-20 $</b>
+                                            </div>
                                         </div>
-                                        <div class="ms-auto">
-                                            <b>12-02 $</b>
+                                        <div class="small d-none" id="cardsmed">
+                                            <p class="card-text pt-1 mb-0 pb-0">Some quick example text to build .
+                                            </p>
+                                            <!--start a grid system -->
+                                            <div>
+                                                <b>included</b>
+                                            </div>
+                                            <div class="grid-card">
+                                                <div class="box-card rounded-3 px-1 py-2 shadow-lg">
+                                                    <div class="d-flex justify-content-center">
+                                                        <img src="images/white-back.jpeg" width="25" height="25"
+                                                            alt=" ">
+                                                        <span class="m-auto">vegan</span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="box-card  rounded-3 px-1 py-2 shadow-lg">
+                                                    <div class="d-flex justify-content-center">
+                                                        <img src="images/white-back.jpeg" width="25" height="25"
+                                                            alt=" ">
+                                                        <span class="m-auto">Halal</span>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                            <div>
+                                                <b>Not-included</b>
+                                            </div>
+                                            <div class="grid-card">
+                                                <div class="box-card rounded-3 px-1 py-2 shadow-lg">
+                                                    <div class="d-flex justify-content-center">
+                                                        <img src="images/white-back.jpeg" width="25" height="25"
+                                                            alt=" ">
+                                                        <span class="m-auto">vegan</span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="box-card  rounded-3 px-1 py-2 shadow-lg">
+                                                    <div class="d-flex justify-content-center">
+                                                        <img src="images/white-back.jpeg" width="25" height="25"
+                                                            alt=" ">
+                                                        <span class="m-auto">Halal</span>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="small">
-                                        <p class="card-text pt-1">Some quick example text to build .</p>
-                                    </div>
                                 </div>
-                            </div>
+                            </a>
+
                         </div>
                         <div class="col-xl-4 col-xxl-4 col-lg-4 col-sm-6 col-12 col-md-4 mb-3">
-                            <div class="card rounded-4">
-                                <div class="mt-2 mx-2">
-                                    <img src="images/Burder-deal.jpeg" class="card-img-top rounded-top-4" alt="...">
-                                </div>
-                                <div class="card-body mt-0 pt-0">
-                                    <div class="d-flex mt-2 pt-0">
-                                        <div>
-                                            <b class="card-title">Starter 01</b>
+                            <a href="#" class="text-decoration-none text-dark" onclick="myFunction()">
+                                <div class="card rounded-4 pointer">
+                                    <div class="mt-2 mx-2">
+                                        <img src="images/Burder-deal.jpeg" class="card-img-top rounded-top-4" alt="...">
+                                    </div>
+                                    <div class="card-body mt-0 pt-0">
+                                        <div class="d-flex mt-2 pt-0">
+                                            <div>
+                                                <b class="card-title">Starter 05</b>
+                                            </div>
+                                            <div class="ms-auto">
+                                                <b>17-20 $</b>
+                                            </div>
                                         </div>
-                                        <div class="ms-auto">
-                                            <b>$6-0</b>
+                                        <div class="small d-none" id="cardsmed">
+                                            <p class="card-text pt-1 mb-0 pb-0">Some quick example text to build .
+                                            </p>
+                                            <!--start a grid system -->
+                                            <div>
+                                                <b>included</b>
+                                            </div>
+                                            <div class="grid-card">
+                                                <div class="box-card rounded-3 px-1 py-2 shadow-lg">
+                                                    <div class="d-flex justify-content-center">
+                                                        <img src="images/white-back.jpeg" width="25" height="25"
+                                                            alt=" ">
+                                                        <span class="m-auto">vegan</span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="box-card  rounded-3 px-1 py-2 shadow-lg">
+                                                    <div class="d-flex justify-content-center">
+                                                        <img src="images/white-back.jpeg" width="25" height="25"
+                                                            alt=" ">
+                                                        <span class="m-auto">Halal</span>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                            <div>
+                                                <b>Not-included</b>
+                                            </div>
+                                            <div class="grid-card">
+                                                <div class="box-card rounded-3 px-1 py-2 shadow-lg">
+                                                    <div class="d-flex justify-content-center">
+                                                        <img src="images/white-back.jpeg" width="25" height="25"
+                                                            alt=" ">
+                                                        <span class="m-auto">vegan</span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="box-card  rounded-3 px-1 py-2 shadow-lg">
+                                                    <div class="d-flex justify-content-center">
+                                                        <img src="images/white-back.jpeg" width="25" height="25"
+                                                            alt=" ">
+                                                        <span class="m-auto">Halal</span>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="small">
-                                        <p class="card-text pt-1">Some quick example text to build .</p>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="col-xl-4 col-xxl-4 col-lg-4 col-sm-6 col-12 col-md-4 mb-3">
+                            <a href="#" class="text-decoration-none text-dark" onclick="myFunction()">
+                                <div class="card rounded-4 pointer">
+                                    <div class="mt-2 mx-2">
+                                        <img src="images/Burder-deal.jpeg" class="card-img-top rounded-top-4" alt="...">
+                                    </div>
+                                    <div class="card-body mt-0 pt-0">
+                                        <div class="d-flex mt-2 pt-0">
+                                            <div>
+                                                <b class="card-title">Starter 05</b>
+                                            </div>
+                                            <div class="ms-auto">
+                                                <b>17-20 $</b>
+                                            </div>
+                                        </div>
+                                        <div class="small d-none" id="cardsmed">
+                                            <p class="card-text pt-1 mb-0 pb-0">Some quick example text to build .
+                                            </p>
+                                            <!--start a grid system -->
+                                            <div>
+                                                <b>included</b>
+                                            </div>
+                                            <div class="grid-card">
+                                                <div class="box-card rounded-3 px-1 py-2 shadow-lg">
+                                                    <div class="d-flex justify-content-center">
+                                                        <img src="images/white-back.jpeg" width="25" height="25"
+                                                            alt=" ">
+                                                        <span class="m-auto">vegan</span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="box-card  rounded-3 px-1 py-2 shadow-lg">
+                                                    <div class="d-flex justify-content-center">
+                                                        <img src="images/white-back.jpeg" width="25" height="25"
+                                                            alt=" ">
+                                                        <span class="m-auto">Halal</span>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                            <div>
+                                                <b>Not-included</b>
+                                            </div>
+                                            <div class="grid-card">
+                                                <div class="box-card rounded-3 px-1 py-2 shadow-lg">
+                                                    <div class="d-flex justify-content-center">
+                                                        <img src="images/white-back.jpeg" width="25" height="25"
+                                                            alt=" ">
+                                                        <span class="m-auto">vegan</span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="box-card  rounded-3 px-1 py-2 shadow-lg">
+                                                    <div class="d-flex justify-content-center">
+                                                        <img src="images/white-back.jpeg" width="25" height="25"
+                                                            alt=" ">
+                                                        <span class="m-auto">Halal</span>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
+
                         </div>
                     </div>
                     <!-- deal section started end here -->
-                </div>
 
-                <div class="col-xxl-3 col-xl-3 col-lg-4 ms-auto">
-                    <div class="card rounded-4 p-3 py-3 shadow-lg">
+
+                    <!-- nav bar roe in two col one col lg none and other col md shadow-lg -->
+
+                </div>
+                <!-- stated here small card menu -->
+
+
+
+
+
+
+                <div class="col-xxl-3 col-xl-3 col-lg-3 ms-auto box-small-card">
+
+                    <div class="card rounded-4 p-3 py-3 shadow-lg ms-auto">
                         <!-- left side text(Filter) and right side icon(close) started  -->
                         <div class="d-flex fs-5">
                             <div class="col ms-0">
                                 <p class="fw-bolder"><i class="fa-solid fa-filter"></i> Filter</p>
                             </div>
                             <div class="col me-auto text-end">
-                                <button class="border-0 fw-bold"><i class="fa-solid fa-x"></i></button>
+                                <!-- <button class="border-0 fw-bold"><i class="fa-solid fa-x"></i></button> -->
                             </div>
                         </div>
                         <!-- left side text(Filter) and right side icon(close) ended  -->
@@ -207,62 +384,67 @@
                         <!-- started price range  -->
                         <div class="row">
                             <!-- card first section started  -->
-                            <div class="m-auto">
-                                <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                                    style="border: 1px solid #ffbd09;">
-                                    <div class="d-flex text-center">
-                                        <img src="images/white-back.jpeg" width="30" height="30" class="p-0 m-0"
-                                            alt=" ">
-                                        <span class="m-auto me-1 text-fluid" style="font-size: 10px;">vegan</span>
+                            <div class="m-auto ">
+                                <a href="#" class="text-decoration-none text-dark ">
+                                    <div class="card px-1 py-2 rounded-3 shadow-lg box small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25" class="" alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">vegan</span>
+                                        </div>
                                     </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark ">
+                                    <div class="card px-1 py-2 rounded-3 shadow-lg box small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25" class="" alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Halal</span>
+                                        </div>
 
-                                </div>
-                                <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                                    style="border: 1px solid #ffbd09;">
-                                    <div class="d-flex text-center">
-                                        <img src="images/white-back.jpeg" width="30" height="30" class="m-0 p-0"
-                                            alt=" ">
-                                        <span class="m-auto me-1 text-fluid" style="font-size: 10px;">Halal</span>
                                     </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark ">
 
-                                </div>
+                                    <div class="card px-1 py-2 rounded-3 shadow-lg box small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25" class="" alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Spicy</span>
+                                        </div>
 
-                                <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                                    style="border: 1px solid #ffbd09;">
-                                    <div class="d-flex text-center">
-                                        <img src="images/white-back.jpeg" width="30" height="30" class="p-0 m-0"
-                                            alt=" ">
-                                        <span class="m-auto me-1 text-fluid" style="font-size: 10px;">Spicy</span>
                                     </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark ">
+                                    <div class="card px-1 py-2 rounded-3 shadow-lg box small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25" class="" alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">chicken</span>
+                                        </div>
 
-                                </div>
-                                <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                                    style="border: 1px solid #ffbd09;">
-                                    <div class="d-flex text-center">
-                                        <img src="images/white-back.jpeg" width="30" height="30" class="p-0 m-0"
-                                            alt=" ">
-                                        <span class="m-auto me-1 text-fluid" style="font-size: 10px;">chicken</span>
                                     </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark ">
+                                    <div class="card px-1 py-2 rounded-3 shadow-lg box small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25" class="" alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Meat</span>
+                                        </div>
 
-                                </div>
-                                <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                                    style="border: 1px solid #ffbd09;">
-                                    <div class="d-flex text-center">
-                                        <img src="images/white-back.jpeg" width="30" height="30" class="p-0 m-0"
-                                            alt=" ">
-                                        <span class="m-auto me-1 text-fluid" style="font-size: 10px;">Meat</span>
                                     </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark ">
+                                    <div class="card px-1 py-2 rounded-3 shadow-lg box small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25" class="" alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Fish</span>
+                                        </div>
 
-                                </div>
-                                <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                                    style="border: 1px solid #ffbd09;">
-                                    <div class="d-flex text-center">
-                                        <img src="images/white-back.jpeg" width="30" height="30" class="p-0 m-0"
-                                            alt=" ">
-                                        <span class="m-auto me-1 text-fluid" style="font-size: 10px;">Fish</span>
                                     </div>
-
-                                </div>
+                                </a>
                             </div>
                             <!-- card first section ended -->
                             <!-- Allergy section started -->
@@ -272,128 +454,156 @@
                             </div>
                             <!--Allergy section ended -->
                             <div class="m-auto">
-                                <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                                    style="border: 1px solid #ffbd09;">
-                                    <div class="d-flex text-center">
-                                        <img src="images/white-back.jpeg" width="30" height="30"
-                                            class="p-0 m-0 rounded-5 me-1" alt=" ">
-                                        <span class="m-auto me-1 text-fluid" style="font-size: 10px;">Gluten</span>
+
+                                <a href="#" class="text-decoration-none text-dark ">
+                                    <div class="card px-1 py-2 rounded-3 shadow-lg box small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25"
+                                                class="p-0 m-0 rounded-5 me-1" alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Gluten</span>
+                                        </div>
+
                                     </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark ">
+                                    <div class="card px-1 py-2 rounded-3 shadow-lg box small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25" class="" alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Fish</span>
+                                        </div>
 
-                                </div>
-                                <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                                    style="border: 1px solid #ffbd09;">
-                                    <div class="d-flex text-center">
-                                        <img src="images/white-back.jpeg" width="30" height="30" class="m-0 p-0"
-                                            alt=" ">
-                                        <span class="m-auto me-1 text-fluid" style="font-size: 10px;">Fish</span>
                                     </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark ">
 
-                                </div>
+                                    <div class="card px-1 py-2 rounded-3 shadow-lg box small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25"
+                                                class="p-0 m-0 rounded-5 me-1" alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Nuts</span>
+                                        </div>
 
-                                <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                                    style="border: 1px solid #ffbd09;">
-                                    <div class="d-flex text-center">
-                                        <img src="images/white-back.jpeg" width="30" height="30"
-                                            class="p-0 m-0 rounded-5 me-1" alt=" ">
-                                        <span class="m-auto me-1 text-fluid" style="font-size: 10px;">Nuts</span>
                                     </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark ">
+                                    <div class="card px-1 py-2 rounded-3 shadow-lg box small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25"
+                                                class="p-0 m-0 rounded-5 me-1" alt=" ">
+                                            <span class="m-auto me-1 text-fluid"
+                                                style="font-size: 9px;">Shellfish</span>
+                                        </div>
 
-                                </div>
-                                <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                                    style="border: 1px solid #ffbd09;">
-                                    <div class="d-flex text-center">
-                                        <img src="images/white-back.jpeg" width="30" height="30"
-                                            class="p-0 m-0 rounded-5 me-1" alt=" ">
-                                        <span class="m-auto me-1 text-fluid" style="font-size: 10px;">Shellfish</span>
                                     </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark ">
+                                    <div class="card px-1 py-2 rounded-3 shadow-lg box small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25"
+                                                class="p-0 m-0 rounded-5 me-1" alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Sesame
+                                                Seed</span>
+                                        </div>
 
-                                </div>
-                                <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                                    style="border: 1px solid #ffbd09;">
-                                    <div class="d-flex text-center">
-                                        <img src="images/white-back.jpeg" width="30" height="30"
-                                            class="p-0 m-0 rounded-5 me-1" alt=" ">
-                                        <span class="m-auto me-1 text-fluid" style="font-size: 10px;">Sesame
-                                            Seed</span>
                                     </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark ">
+                                    <div class="card px-1 py-2 rounded-3 shadow-lg box small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/pizza-big-card.jpeg" width="25" height="25"
+                                                class="p-0 m-0 rounded-5 me-1" alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Milk</span>
+                                        </div>
 
-                                </div>
-                                <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                                    style="border: 1px solid #ffbd09;">
-                                    <div class="d-flex text-center">
-                                        <img src="images/pizza-big-card.jpeg" width="30" height="30"
-                                            class="p-0 m-0 rounded-5 me-1" alt=" ">
-                                        <span class="m-auto me-1 text-fluid" style="font-size: 10px;">Milk</span>
                                     </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark ">
+                                    <div class="card px-1 py-2 rounded-3 shadow-lg box small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25"
+                                                class="p-0 m-0 rounded-5 me-1" alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Peanut</span>
+                                        </div>
 
-                                </div>
-                                <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                                    style="border: 1px solid #ffbd09;">
-                                    <div class="d-flex text-center">
-                                        <img src="images/white-back.jpeg" width="30" height="30"
-                                            class="p-0 m-0 rounded-5 me-1" alt=" ">
-                                        <span class="m-auto me-1 text-fluid" style="font-size: 10px;">Peanut</span>
                                     </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark ">
+                                    <div class="card px-1 py-2 rounded-3 shadow-lg box small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25"
+                                                class="p-0 m-0 rounded-5" alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">celery</span>
+                                        </div>
 
-                                </div>
-                                <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                                    style="border: 1px solid #ffbd09;">
-                                    <div class="d-flex text-center">
-                                        <img src="images/white-back.jpeg" width="30" height="30"
-                                            class="p-0 m-0 rounded-5" alt=" ">
-                                        <span class="m-auto me-1 text-fluid" style="font-size: 10px;">celery</span>
                                     </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark ">
+                                    <div class="card px-1 py-2 rounded-3 shadow-lg box small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25"
+                                                class="p-0 m-0 rounded-5 " alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Lupine</span>
+                                        </div>
 
-                                </div>
-                                <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                                    style="border: 1px solid #ffbd09;">
-                                    <div class="d-flex text-center">
-                                        <img src="images/white-back.jpeg" width="30" height="30"
-                                            class="p-0 m-0 rounded-5 " alt=" ">
-                                        <span class="m-auto me-1 text-fluid" style="font-size: 10px;">Lupine</span>
                                     </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark ">
+                                    <div class="card px-1 py-2 rounded-3 shadow-lg box small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/white-back.jpeg" width="25" height="25"
+                                                class="p-0 m-0 rounded-5 " alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Soy
+                                                Beans</span>
+                                        </div>
 
-                                </div>
-                                <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                                    style="border: 1px solid #ffbd09;">
-                                    <div class="d-flex text-center">
-                                        <img src="images/white-back.jpeg" width="30" height="30"
-                                            class="p-0 m-0 rounded-5 " alt=" ">
-                                        <span class="m-auto me-1 text-fluid" style="font-size: 10px;">Soy
-                                            Beans</span>
                                     </div>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark ">
+                                    <div class="card px-1 py-2 rounded-3 shadow-lg box small-card d-inline-block"
+                                        style="border: 1px solid #ffbd09;">
+                                        <div class="d-flex text-center">
+                                            <img src="images/orawhite.jpeg" width="25" height="25"
+                                                class="p-0 m-0 rounded-5 " alt=" ">
+                                            <span class="m-auto me-1 text-fluid" style="font-size: 9px;">Eggs</span>
+                                        </div>
 
-                                </div>
-                                <div class="card g-2  rounded-4 p-2 rounded-3 shadow-lg small-card d-inline-block"
-                                    style="border: 1px solid #ffbd09;">
-                                    <div class="d-flex text-center">
-                                        <img src="images/orawhite.jpeg" width="30" height="30"
-                                            class="p-0 m-0 rounded-5 " alt=" ">
-                                        <span class="m-auto me-1 text-fluid" style="font-size: 10px;">Eggs</span>
                                     </div>
-
-                                </div>
+                                </a>
                             </div>
 
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"
-            integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-            integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-            crossorigin="anonymous"></script>
-        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    </div>
+    <!-- link js file -->
+    <script src="javascript/javascript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"
+        integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
