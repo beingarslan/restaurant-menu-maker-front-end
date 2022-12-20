@@ -2,93 +2,354 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- style sheet link bootstrap -->
-    <!-- <link rel="stylesheet" href="stylesheet/bootstrap.css"> -->
-    <!-- coustom stylesheet -->
-    <!-- <link rel="stylesheet" href="stylesheet/style.css"> -->
-    <!-- bootstrap online link  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!-- google font links  -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
-        rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
-        rel="stylesheet" type="text/css">
-    <!-- cdn link start noe -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
-        rel="stylesheet">
-<style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- style sheet link bootstrap -->
+  <!-- <link rel="stylesheet" href="stylesheet/bootstrap.css"> -->
+  <!-- coustom stylesheet -->
+  <!-- <link rel="stylesheet" href="stylesheet/style.css"> -->
+  <!-- bootstrap online link  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- google font links  -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+    rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+    rel="stylesheet" type="text/css">
+  <!-- cdn link start noe -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+    rel="stylesheet">
+  <style>
     .grid-small {
-        display: grid;
-        width: 320px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 5px;
-        grid-auto-rows: auto;
-        background-color: aqua;
-        padding: 10px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      background-color: light;
+      grid-auto-rows: minmax(auto, auto);
+      border: #f1f1f1;
 
     }
+
     .box_1 {
-        background-color: white;
-        border: 1px solid gray;
-        /* padding: 10px; */
-        /* font-size: 20px; */
-        text-align: center;
-        height: 40px;
-        border-radius:15px ;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      border: 1px solid orange;
+      text-align: center;
+      height: 100%;
+      /* margin: auto; */
+      padding-right: 3px;
+      padding-left: 3px;
+      border-radius: 30px;
+      font-weight: 600;
+
     }
+
     .box_1:hover {
-        background-color: #f1f1f1;
-        cursor: pointer;
+      background-color: #f1f1f1;
+      cursor: pointer;
+
     }
-    .box_1:first-child {
+
+    .box_1:nath-child {
       grid-column-start: 1;
-      grid-column-end: 5;
-  }
-</style>
-    
+      grid-column-end: 4;
+    }
+  </style>
+
 </head>
 
 <body>
-    <div class="grid-small">
-       <div class="box_1">link open now 1</div>
-       <div class="box_1">link open now 2</div>
-       <div class="box_1">link open now 3</div>
-       <div class="box_1">link open now 4</div>
-       <div class="box_1">link open now 5</div>
-       <div class="box_1">link open now 6</div>
-       <div class="box_1">link open now 7</div>
-       <div class="box_1">link open now 8</div>
-       <div class="box_1">link open now 9</div>
-       <div class="box_1">link open now 10</div>
-       <div class="box_1">link open now 11</div>
-       <div class="box_1">link open now 12</div>
-       <div class="box_1">link open now 13</div>
-       <div class="box_1">link open now 14</div>
-       <div class="box_1">link open now 15</div>
-       <div class="box_1">link open now 16</div>
-       <div class="box_1">link open now 17</div>
-       <div class="box_1">link open now 18</div>
-       <div class="box_1">link open now 19</div>
+  <div class="shadow-lg p-3 rounded-4" style="width: 280px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="d-flex justify-content-between">
+            <div>
+              <a href="/" class="text-decoration-none text-dark">
+                <p class="fw-bolder"><i class="fa-solid fa-filter"></i> Filter</p>
+              </a>
+            </div>
+            <div>
+              <p class="fw-bolder"><i class="fa-close fa-close"></i> X</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  
+    <div class="grid-small">
+      <!-- <div class="box_1"></div> -->
+      <div class="box_1 rounded-2 card">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="d-flex justify-content-between">
+            <div>
+              <img src="images/white-back.jpeg" width="25" height="25" class="rounded-4" alt=" ">
+            </div>
+            <div>
+              <span class="" style="font-size: 12px;">vegan</span>
+            </div>
+
+          </div>
+        </a>
+      </div>
+      <div class="box_1 rounded-2 card">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="d-flex justify-content-between">
+            <div>
+              <img src="images/white-back.jpeg" width="25" height="25" class="rounded-4" alt=" ">
+            </div>
+            <div>
+              <span class="" style="font-size: 12px;">vegan</span>
+            </div>
+
+          </div>
+        </a>
+      </div>
+      <div class="box_1 rounded-2 card">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="d-flex justify-content-between">
+            <div>
+              <img src="images/white-back.jpeg" width="25" height="25" class="rounded-4" alt=" ">
+            </div>
+            <div>
+              <span class="" style="font-size: 12px;">Halal</span>
+            </div>
+
+          </div>
+        </a>
+      </div>
+      <div class="box_1 rounded-2 card">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="d-flex justify-content-between">
+            <div>
+              <img src="images/white-back.jpeg" width="25" height="25" class="rounded-4" alt=" ">
+            </div>
+            <div>
+              <span class="" style="font-size: 12px;">Spicy</span>
+            </div>
+
+          </div>
+        </a>
+      </div>
+      <div class="box_1 rounded-2 card">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="d-flex justify-content-between">
+            <div>
+              <img src="images/white-back.jpeg" width="25" height="25" class="rounded-4" alt=" ">
+            </div>
+            <div>
+              <span class="" style="font-size: 12px;">Chicken</span>
+            </div>
+
+          </div>
+        </a>
+      </div>
+      <div class="box_1 rounded-2 card">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="d-flex justify-content-between">
+            <div>
+              <img src="images/white-back.jpeg" width="25" height="25" class="rounded-4" alt=" ">
+            </div>
+            <div>
+              <span class="" style="font-size: 12px;">Meat</span>
+            </div>
+
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="container my-2 pb-0" style="border-bottom: .2pc solid gray;">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="d-flex justify-content-between">
+            <div>
+              <a href="/" class="text-decoration-none text-dark">
+                <p class="fw-bolder"><i class="fa-solid fa-filter"></i> Filter</p>
+              </a>
+            </div>
+            <div>
+              <p class="fw-bolder"><i class="fa-close fa-close"></i> X</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-small">
+      
+      <div class="box_1 rounded-2 card">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="d-flex justify-content-between">
+            <div>
+              <img src="images/white-back.jpeg" width="25" height="25" class="rounded-4" alt=" ">
+            </div>
+            <div>
+              <span class="" style="font-size: 12px;">Fish</span>
+            </div>
+
+          </div>
+        </a>
+      </div>
+      <div class="box_1 rounded-2 card">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="d-flex justify-content-between">
+            <div>
+              <img src="images/white-back.jpeg" width="25" height="25" class="rounded-4" alt=" ">
+            </div>
+            <div>
+              <span class="" style="font-size: 12px;">Gluten</span>
+            </div>
+
+          </div>
+        </a>
+      </div>
+      <div class="box_1 rounded-2 card">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="d-flex justify-content-between">
+            <div>
+              <img src="images/white-back.jpeg" width="25" height="25" class="rounded-4" alt=" ">
+            </div>
+            <div>
+              <span class="" style="font-size: 12px;">Fish</span>
+            </div>
+
+          </div>
+        </a>
+      </div>
+      <div class="box_1 rounded-2 card">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="d-flex justify-content-between">
+            <div>
+              <img src="images/white-back.jpeg" width="25" height="25" class="rounded-4" alt=" ">
+            </div>
+            <div>
+              <span class="" style="font-size: 12px;">Nuts</span>
+            </div>
+
+          </div>
+        </a>
+      </div>
+      <div class="box_1 rounded-2 card" style="grid-column-start: 2;grid-column-end: 4;">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="d-flex justify-content-between">
+            <div>
+              <img src="images/white-back.jpeg" width="25" height="25" class="rounded-4" alt=" ">
+            </div>
+            <div>
+              <span class="" style="font-size: 12px;">Shellfish</span>
+            </div>
+
+          </div>
+        </a>
+      </div>
+      <div class="box_1 rounded-2 card" style="grid-column-start: 1;
+    grid-column-end: 3;">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="d-flex justify-content-between">
+            <div>
+              <img src="images/white-back.jpeg" width="25" height="25" class="rounded-4" alt=" ">
+            </div>
+            <div>
+              <span class="" style="font-size: 12px;">Sesame Seed</span>
+            </div>
+
+          </div>
+        </a>
+      </div>
+      <div class="box_1 rounded-2 card">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="d-flex justify-content-between">
+            <div>
+              <img src="images/white-back.jpeg" width="25" height="25" class="rounded-4" alt=" ">
+            </div>
+            <div>
+              <span class="" style="font-size: 12px;">Milk</span>
+            </div>
+
+          </div>
+        </a>
+      </div>
+      <div class="box_1 rounded-2 card">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="d-flex justify-content-between">
+            <div>
+              <img src="images/white-back.jpeg" width="25" height="25" class="rounded-4" alt=" ">
+            </div>
+            <div>
+              <span class="" style="font-size: 12px;">Peanut</span>
+            </div>
+
+          </div>
+        </a>
+      </div>
+      <div class="box_1 rounded-2 card">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="d-flex justify-content-between">
+            <div>
+              <img src="images/white-back.jpeg" width="25" height="25" class="rounded-4" alt=" ">
+            </div>
+            <div>
+              <span class="" style="font-size: 12px;">Celery</span>
+            </div>
+
+          </div>
+        </a>
+      </div>
+      <div class="box_1 rounded-2 card">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="d-flex justify-content-between">
+            <div>
+              <img src="images/white-back.jpeg" width="25" height="25" class="rounded-4" alt=" ">
+            </div>
+            <div>
+              <span class="" style="font-size: 12px;">Lupine</span>
+            </div>
+
+          </div>
+        </a>
+      </div>
+      <div class="box_1 rounded-2 card">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="d-flex justify-content-between">
+            <div>
+              <img src="images/white-back.jpeg" width="25" height="25" class="rounded-4" alt=" ">
+            </div>
+            <div>
+              <span class="" style="font-size: 12px;">Soy Beans</span>
+            </div>
+
+          </div>
+        </a>
+      </div>
+      <div class="box_1 rounded-2 card">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="d-flex justify-content-between">
+            <div>
+              <img src="images/white-back.jpeg" width="25" height="25" class="rounded-4" alt=" ">
+            </div>
+            <div>
+              <span class="" style="font-size: 12px;">Eggs</span>
+            </div>
+
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+ 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"
-  integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-  integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-  crossorigin="anonymous"></script>
-<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
