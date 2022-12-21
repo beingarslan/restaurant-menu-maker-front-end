@@ -190,10 +190,15 @@
  }
  .box-card{
   line-height: 100%;
-  border: orange 1px solid;
   font-size: 12px;
   
  }
+ .border-orange{
+  border: orange 1px solid;
+ }
+ .text-orange{
+  color: orange;
+  }
   .box-card:hover{
     background-color: #c7bebe;
     cursor: pointer;
@@ -214,10 +219,7 @@ body {
     padding: auto;
     margin: auto;
     display: inline;
-    /* border-radius: 5px; */
-    /* background-color: #fff; */
     color: #000;
-    /* font-size: 12px; */
     font-weight: 600;
     margin:2px;
     display: inline-block;
