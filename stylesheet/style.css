@@ -152,21 +152,20 @@
 
 .bg-image {
 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    height: auto;
-    width: 100%;
-    padding-bottom: 3em;
-    position: relative;
-    /* z-index: 1; */
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    height: auto !important;
+    width: 100% !important;
+    padding-bottom: 3em !important;
+    position: relative !important;
+    z-index: 1 !important;
 
     /* background-color: aqua; */
 }
 
 .bg-image::before {
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -193,7 +192,7 @@
   
  }
  .border-orange{
-  border: orange 1px solid;
+  border: orange 1px solid !important;
  }
  .text-orange{
   color: orange;
@@ -297,6 +296,12 @@
 
 .line-height-100{
 line-height: 100% !important;
+}
+.h-px-100{
+  height: 100px !important;
+}
+.word-space{
+
 }
 
 
