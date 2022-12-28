@@ -205,11 +205,12 @@
 
 
 * {
-  font-family: "adobe-clean", sans-serif; 
+  /* font-family: "adobe-clean", sans-serif;  */
     margin: 0;
     padding: 0;
     overflow-y: hidden;
-  /* font-family: roboto bold; */
+  font-family: roboto bold;
+  word-wrap: normal;
   /* font-family: roboto regular;
     font-display: auto;
     font-style: normal;
@@ -223,16 +224,11 @@
 
 .small-card {
     width:auto;
-    /* height: 0px; */
     text-align: center;
-    /* padding: auto; */
-    /* margin: auto; */
     display: inline;
-    /* color: #000; */
+    
     font-weight: 500;
     margin:2px;
-    /* display: inline-block; */
-    /* box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1); */
 
 }
 
@@ -298,6 +294,12 @@
     max-width: 100% !important;
   }
 }
+
+.line-height-100{
+line-height: 100% !important;
+}
+
+
 .w-90{
   width: 90% !important;
 }
