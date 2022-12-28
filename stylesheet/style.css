@@ -176,14 +176,15 @@
 }
   /* small-card font size is 12px */
  .font-small{
-  font-size: 12px;
+  font-size: 13px;
   color: #000;
-  font-family: 'Courier New', Courier, monospace;
+  font-weight:500;
+  /* font-family: 'Courier New', Courier, monospace; */
  } 
  .grid-card{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 8px;
+  grid-gap: 10px;
   grid-auto-rows: auto;
   
  }
@@ -205,14 +206,14 @@
 
 
 * {
-  /* font-family: "Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif; */
-  font-family: "adobe-clean", sans-serif; 
+  font-family: "Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  /* font-family: "adobe-clean", sans-serif;  */
     margin: 0;
     padding: 0;
     overflow-y: hidden;
-  font-family: roboto bold;
+  /* font-family: roboto bold; */
   word-wrap: normal;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.2px;
   font-weight: 500;
   /* font-family: roboto regular;
     font-display: auto;
