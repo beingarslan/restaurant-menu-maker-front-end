@@ -383,3 +383,16 @@
   .text-navorange{
     color: #ffbd09 !important;
   }
+
+
+/* button  background hover  */
+button.bg-navorange:hover{
+  /* font-weight: 800 !important;
+  font-family: 'unset New', unset, monospace !important;   */
+  /* background-color:#f8b600 !important; */
+  background-image: linear-gradient(to top left, #f8b600, rgb(206, 192, 66));
+  /* opacity: unset; */
+}
+  
+
+
