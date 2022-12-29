@@ -372,3 +372,14 @@
   font-weight: 800 !important;
   font-family: 'unset New', unset, monospace !important;
 }
+
+
+
+
+
+/* nav bar color style here */
+.bg-navorange{
+  background-color:#fdc21f !important;}
+  .text-navorange{
+    color: #ffbd09 !important;
+  }
