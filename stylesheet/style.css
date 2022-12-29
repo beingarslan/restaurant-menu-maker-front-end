@@ -298,6 +298,12 @@
     max-width: 100% !important;
   }
 }
+.bg-white{
+  background-color: white !important;
+}
+.text-white{
+  color: white !important;
+}
 
 .line-height-100{
 line-height: 100% !important;
