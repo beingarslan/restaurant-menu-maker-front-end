@@ -215,7 +215,8 @@
 
 
 * {
-  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Sylfaen,ariel,Helvetica,sans-serif!important;
+  /* font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; */
   /* font-family:  'Lucida Sans Unicode', 'Lucida Grande', Verdana, Geneva, Tahoma, sans-serif !important; */
   /* font-family: "Google Sans",  Helvetica, Arial, sans-serif; */
   /* font-family: "adobe-clean", sans-serif;  */
@@ -223,7 +224,7 @@
   /* font-family :Verdana, Geneva, Tahoma, sans-serif; */
   margin: 0;
   padding: 0;
-  overflow-y: hidden;
+  overflow-y: visible;
   /* font-family: roboto bold; */
   word-wrap: normal;
   letter-spacing: 1.2px;
